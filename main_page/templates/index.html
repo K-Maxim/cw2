@@ -43,7 +43,7 @@
                     <span class="item__username">{{ post.poster_name }}</span>
                 </a>
             </div>
-            <a href="/post.html" class="item__post-link">
+            <a href="/post/{{ post.pk }}" class="item__post-link">
                 <img src="/static/img/post{{ post.pk }}.jpg" alt="нет картинки" width="348" class="item__post-img">
             </a>
 		  <a href="/tag/{{tags[post.pk - 1][1:]}}" class="item__tag">{{tags[post.pk - 1]}}</a>
