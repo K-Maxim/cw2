@@ -118,5 +118,57 @@
     "commenter_name": "hanna",
     "comment": "Очень необычная фоторафия! Где это?",
     "pk": 20
+  },
+  {
+    "post_id": 8,
+    "commenter_name": "masha",
+    "comment": "Смотря на фотографию хочется в отпуск",
+    "pk": 21
+  },
+  {
+    "post_id": 8,
+    "commenter_name": "katya",
+    "comment": "Райское место!))",
+    "pk": 22
+  },
+  {
+    "post_id": 9,
+    "commenter_name": "ira",
+    "comment": "Обожаю книги про Гарри Поттера",
+    "pk": 23
+  },
+  {
+    "post_id": 9,
+    "commenter_name": "max",
+    "comment": "Хотел бы я попасть на это мероприятие(",
+    "pk": 24
+  },
+  {
+    "post_id": 9,
+    "commenter_name": "tomas",
+    "comment": "Люблю прогать)",
+    "pk": 25
+  },
+  {
+    "post_id": 9,
+    "commenter_name": "kyle",
+    "comment": "Будут ли еще такие мероприятия?",
+    "pk": 26
+  },
+  {
+    "post_id": 10,
+    "commenter_name": "alina",
+    "comment": "Классное аниме!",
+    "pk": 27
+  },{
+    "post_id": 10,
+    "commenter_name": "markus",
+    "comment": "Битва с Пейном - мой самый любимый момент",
+    "pk": 28
+  },{
+    "post_id": 10,
+    "commenter_name": "julia",
+    "comment": "Стереть бы себе память и посмотреть заново)",
+    "pk": 29
   }
 ]
