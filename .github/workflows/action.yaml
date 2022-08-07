@@ -38,6 +38,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
+            cd ..
+            cd deploy
             cd flask_api_ci
             echo ${{ secrets.PASSWORD }} | sudo -S docker-compose up -d
             
