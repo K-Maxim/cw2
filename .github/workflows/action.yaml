@@ -28,7 +28,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          source: "skypro/docker-compose.yaml"
+          source: "deploy/docker-compose.yaml"
           target: "flask_api_ci"
           strip_components: 1
       - name: skypro app
