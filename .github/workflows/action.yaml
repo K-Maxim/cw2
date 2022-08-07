@@ -7,4 +7,8 @@ jobs:
       - name: clone code
         uses: actions/chekout@v2
       - name: build
-        uses: docker build -t mkaprenko/cw2_flask_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID .
+        run: docker build -t ${{ secrets.NAME }}/cw2_flask_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID .
+      - name: login
+        run: docker login -u ${{ secrets.NAME }} -p ${{ secrets.DOCKER_TOKEN }}
+      - name: push
+        run: docker push ${{ secrets.NAME }}/cw2_flask_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
