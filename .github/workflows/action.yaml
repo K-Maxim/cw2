@@ -31,7 +31,7 @@ jobs:
           source: "skypro/docker-compose.yaml"
           target: "flask_api_ci"
           strip_components: 1
-      - name: deploy app
+      - name: skypro app
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
