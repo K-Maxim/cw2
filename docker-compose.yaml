@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  flask_web:
+    build:
+      context: .
+    image: mkaprenko/cw2_flask_app
+    ports:
+      - 80:80
+    restart: always

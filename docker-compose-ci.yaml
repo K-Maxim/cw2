@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  flask_web:
+    image: mkaprenko/cw2_flask_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+    ports:
+      - 80:80
+    restart: always

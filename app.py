@@ -6,6 +6,7 @@ from search.view import search_blueprint
 from user_feed.view import user_feed__blueprint
 from tag.view import tag_blueprint
 from bookmarks.view import bookmarks_blueprint
+from add_post.view import add_post_blueprint
 
 app = Flask(__name__)
 
@@ -17,6 +18,7 @@ app.register_blueprint(search_blueprint, url_prefix='/')
 app.register_blueprint(user_feed__blueprint, url_prefix='/')
 app.register_blueprint(tag_blueprint, url_prefix='/')
 app.register_blueprint(bookmarks_blueprint, url_prefix='/')
+app.register_blueprint(add_post_blueprint, url_prefix='/')
 
 
 @app.route('/api/posts/')

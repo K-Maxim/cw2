@@ -1,0 +1,10 @@
+name: Build and push deploy workflow
+on: [push]
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone code
+        uses: actions/chekout@v2
+      - name: build
+        uses: docker build -t mkaprenko/cw2_flask_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID .

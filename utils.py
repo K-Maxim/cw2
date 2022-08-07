@@ -17,6 +17,16 @@ def get_posts_all():
         return 'Файл не удается преобразовать'
 
 
+def save_json(all_post):
+    """
+    запись новых данных в JSON-файл
+    :param all_post: список всех постов
+    """
+    with open('posts.json', 'w', encoding='UTF-8') as file:
+        json.dump(all_post, file, ensure_ascii=False)
+
+
+
 def get_comments_all():
     """
     Ипортирует Json-файл
@@ -139,7 +149,7 @@ def get_post_by_tagname(tag_name):
 
 def add_to_json(postid):
     """
-    добаление поста
+    добаление поста в закладки
     :param postid: id поста (тип int)
     :return: список постов с учетом добавленных постов
     """
@@ -155,7 +165,7 @@ def add_to_json(postid):
 
 def delete_from_json(postid):
     """
-    удаление поста
+    удаление поста из закладок
     :param postid: id поста (тип int)
     :return: список постов с учетом удаленных постов
     """
