@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone code
-        uses: actions/chekout@v2
+        uses: actions/checkout@v2
       - name: build
         run: docker build -t ${{ secrets.NAME }}/cw2_flask_app:$GITHUB_REF_NAME-$GITHUB_RUN_ID .
       - name: login
