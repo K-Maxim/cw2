@@ -28,7 +28,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          source: "deploy/docker-compose.yaml"
+          source: "skypro/docker-compose.yaml"
           target: "flask_api_ci"
           strip_components: 1
       - name: skypro app
@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
             cd ..
-            cd deploy
+            cd skypro
             cd flask_api_ci
             echo ${{ secrets.PASSWORD }} | sudo -S docker-compose up -d
             
